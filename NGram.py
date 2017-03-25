@@ -128,7 +128,7 @@ def find_UNK_set(file, k, prob = 1.0):
 	UnkSet = set([x for x in words if words[x] <= k])
 	return set([x for x in UnkSet if random.random() < prob])
 
-
-model = Ngram()
-model.train_from_file("brown.train.txt")
-print(model.perplexity("brown.test.txt"))
+#an example of how to run the program
+#model = Ngram()
+#model.train_from_file("./data/brown.train.txt")
+#print(model.perplexity(".data/brown.test.txt"))
